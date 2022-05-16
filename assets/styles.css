@@ -1,0 +1,69 @@
+html,
+body,
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto 50px;
+
+}
+
+.header {
+    background-color: rgb(217, 226, 247);
+}
+
+.main {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 10fr;
+
+    padding: 10px;
+}
+
+.main__title {}
+
+.search__box {}
+
+.main__title {
+    margin: 10px;
+    color: rgb(88, 88, 88);
+}
+
+.search__line {
+    border: 0px;
+    height: 30px;
+    width: 50%;
+    line-height: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px 1px rgb(201, 200, 200);
+    padding-left: 10px;
+    margin: 10px;
+}
+
+.gallery {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* контейнер для картинки в галерее, добавляется по ходу вывода на страницу картинок */
+.gallery__item {
+    width: 300px;
+
+}
+
+/* сама картинка  */
+.gallery__img {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    background-color: rgb(217, 226, 247);
+}
